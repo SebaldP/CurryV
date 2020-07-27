@@ -1,0 +1,194 @@
+/* -----------------FONT----------------- */
+
+/*!
+ * Font Awesome Free 5.14.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+
+@font-face {
+   font-family: "Font_Awesome_5_Regular";
+   font-style: normal;
+   font-weight: 400;
+   font-display: block;
+   src: url(../font/webfonts/fa-regular-400.eot);
+   src: url(../font/webfonts/fa-regular-400.eot?#iefix) format("embedded-opentype"),
+        url(../font/webfonts/fa-regular-400.woff2) format("woff2"),
+        url(../font/webfonts/fa-regular-400.woff) format("woff"),
+        url(../font/webfonts/fa-regular-400.ttf) format("truetype"),
+        url(../font/webfonts/fa-regular-400.svg#fontawesome) format("svg");
+}
+
+@font-face {
+  font-family: "Font_Awesome_5_Solid";
+  font-style: normal;
+  font-weight: 900;
+  font-display: block;
+  src: url(../font/webfonts/fa-solid-900.eot);
+  src: url(../font/webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"),
+       url(../font/webfonts/fa-solid-900.woff2) format("woff2"),
+       url(../font/webfonts/fa-solid-900.woff) format("woff"),
+       url(../font/webfonts/fa-solid-900.ttf) format("truetype"),
+       url(../font/webfonts/fa-solid-900.svg#fontawesome) format("svg");
+}
+
+@font-face {
+  font-family: "Font_Awesome_5_Brands";
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url(../font/webfonts/fa-brands-400.eot);
+  src: url(../font/webfonts/fa-brands-400.eot?#iefix) format("embedded-opentype"),
+       url(../font/webfonts/fa-brands-400.woff2) format("woff2"),
+       url(../font/webfonts/fa-brands-400.woff) format("woff"),
+       url(../font/webfonts/fa-brands-400.ttf) format("truetype"),
+       url(../font/webfonts/fa-brands-400.svg#fontawesome) format("svg");
+}
+
+* {
+  font-family: "Font_Awesome_5_Regular", Arial, sans-serif;
+  font-size: 12pt;
+}
+
+h2, h3 {
+  font-family: "Font_Awesome_5_Brands", "Font_Awesome_5_Regular", Arial, sans-serif;
+  font-size: 16pt;
+}
+
+.green {color:#81c683}
+
+h1, .green {
+  font-family: "Font_Awesome_5_Solid", "Font_Awesome_5_Regular", Arial, sans-serif;
+  font-size: 26pt;
+}
+
+/* -----------------MEDIA QUERRIES----------------- */
+
+@media only screen and (max-width: 1136px) {
+  
+  .wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, auto);
+    grid-template-areas: 
+      "pics"
+      "name"
+      "description"
+      "experiences"
+      "formation"
+      "recommandation"
+      "hobbies"
+      "contact";
+  }
+
+  .containerA, .containerB {
+    display:flex;
+    flex-direction: column;
+  }
+}
+
+/* -----------------TITLE----------------- */
+
+h1, h2 {
+  text-transform: uppercase;
+}
+
+.titre {
+  min-height: 48px;
+  background: #404040;
+  color: white;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+}
+
+.titre h2 {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* -----------------GRID----------------- */
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2.099fr;
+  grid-template-rows: 0.854fr 1.02fr 0.169fr 1.625fr 0.237fr 0.479fr;
+  grid-template-areas:
+  	"pics name"
+  	"contact formation"
+  	"description formation"
+  	"description experiences"
+  	"description recommandation"
+    "hobbies recommandation";
+}
+
+#pics {
+  min-height: 328px;
+  background: #81c683;
+  grid-area: pics;
+  padding-top: 64px;
+  text-align: center;
+}
+
+#name {
+  background: white;
+  grid-area: name;
+  padding-left: 65px;
+  padding-top: 119px;
+}
+
+#formation {
+  background: white;
+  grid-area: formation;
+  padding: 27px 54px 51px 65px;
+}
+
+#experiences {
+  background: white;
+  grid-area: experiences;
+  padding: 27px 54px 51px 65px;;
+}
+
+#recommandation {
+  background: white;
+  grid-area: recommandation;
+  padding: 27px 54px 51px 65px;
+}
+
+#description {
+  background: #81c683;
+  grid-area: description;
+  padding: 84px 46px 39px 49px;
+  position: relative;
+}
+
+#hobbies {
+  background: #81c683;
+  grid-area: hobbies;
+  padding: 84px 46px 39px 49px;
+  position: relative;
+}
+
+#contact {
+  background: #81c683;
+  grid-area: contact;
+  padding: 84px 46px 39px 49px;
+  position: relative;
+}
+
+/* -----------------FLEXBOX----------------- */
+
+.containerA, .containerB {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.date {
+  min-width: 182px;
+}
+
+.event {
+  min-width: 442px;
+  margin-left: minmax(30px, 26,8%);
+}
