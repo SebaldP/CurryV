@@ -131,7 +131,7 @@
 
 .title_aside {
     display: block;
-    min-height: 48px;
+    min-height: 2em;
     background: #404040;
     color: white;
     position: absolute;
@@ -237,7 +237,7 @@
 
      .title_aside {
         display: block;
-        min-height: 48px;
+        min-height: 2em;
         background: #404040;
         color: white;
         position: absolute;

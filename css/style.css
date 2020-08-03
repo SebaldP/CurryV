@@ -20,20 +20,20 @@ body {
 
 
 .title_green {
-  font-size: 1.6em;
+  font-size: 1.8em;
   font-weight: bold;
   text-transform: uppercase;
   color:#81C784;
 }
 
 .title_grey {
-  font-size: 1.6em;
+  font-size: 1.8em;
   font-weight: lighter;
   text-transform: uppercase;
 }
 
 h2 {
-  font-size: 1.3em;
+  font-size: 1.5em;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -135,9 +135,9 @@ h2 {
 
 .title_aside {
   display: block;
-  min-height: 3em;
+  min-height: 2em;
   background: #404040;
-  color: white;
+  color: #81C784;
   position: absolute;
   top: 0;
   left: 0;
