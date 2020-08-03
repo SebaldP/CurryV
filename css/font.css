@@ -1,0 +1,72 @@
+/* -----------------FONT----------------- */
+
+/*!
+ * Font Awesome Free 5.14.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+
+ @font-face {
+    font-family: "Font_Awesome_5_Regular";
+    font-style: normal;
+    font-weight: 400;
+    src: url(../font/webfonts/fa-regular-400.eot);
+    src: url(../font/webfonts/fa-regular-400.eot?#iefix) format("embedded-opentype"),
+         url(../font/webfonts/fa-regular-400.woff2) format("woff2"),
+         url(../font/webfonts/fa-regular-400.woff) format("woff"),
+         url(../font/webfonts/fa-regular-400.ttf) format("truetype"),
+         url(../font/webfonts/fa-regular-400.svg#fontawesome) format("svg");
+ }
+ 
+ @font-face {
+   font-family: "Font_Awesome_5_Solid";
+   font-style: normal;
+   font-weight: 900;
+   src: url(../font/webfonts/fa-solid-900.eot);
+   src: url(../font/webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"),
+        url(../font/webfonts/fa-solid-900.woff2) format("woff2"),
+        url(../font/webfonts/fa-solid-900.woff) format("woff"),
+        url(../font/webfonts/fa-solid-900.ttf) format("truetype"),
+        url(../font/webfonts/fa-solid-900.svg#fontawesome) format("svg");
+ }
+ 
+ @font-face {
+   font-family: "Font_Awesome_5_Brands";
+   font-style: normal;
+   font-weight: 400;
+   src: url(../font/webfonts/fa-brands-400.eot);
+   src: url(../font/webfonts/fa-brands-400.eot?#iefix) format("embedded-opentype"),
+        url(../font/webfonts/fa-brands-400.woff2) format("woff2"),
+        url(../font/webfonts/fa-brands-400.woff) format("woff"),
+        url(../font/webfonts/fa-brands-400.ttf) format("truetype"),
+        url(../font/webfonts/fa-brands-400.svg#fontawesome) format("svg");
+ }
+
+/* Copyright 2010 The Raleway Project Authors (impallari@gmail.com), with Reserved Font Name "Raleway".
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+http://scripts.sil.org/OFL */
+
+
+ @font-face {
+	font-family: "Releway";
+     src: url('font/Raleway/static/Raleway-Regular.ttf');
+}
+
+@font-face {
+	font-family: "Releway";
+     src: url('font/Raleway/static/Raleway-SemiBold.ttf');
+     font-weight: bold;
+}
+
+@font-face {
+	font-family: "Releway";
+     src: url('font/Raleway/static/Raleway-Italic.ttf');
+     font-style: italic;
+}
+
+@font-face {
+	font-family: "Releway";
+     src: url('font/Raleway/static/Raleway-ExtraLight.ttf');
+     font-weight: lighter;
+}

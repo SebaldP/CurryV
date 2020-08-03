@@ -1,45 +1,6 @@
 /* -----------------FONT----------------- */
 
-/*!
- * Font Awesome Free 5.14.0 by @fontawesome - https://fontawesome.com
- * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
- */
-
-@font-face {
-   font-family: "Font_Awesome_5_Regular";
-   font-style: normal;
-   font-weight: 400;
-   src: url(../font/webfonts/fa-regular-400.eot);
-   src: url(../font/webfonts/fa-regular-400.eot?#iefix) format("embedded-opentype"),
-        url(../font/webfonts/fa-regular-400.woff2) format("woff2"),
-        url(../font/webfonts/fa-regular-400.woff) format("woff"),
-        url(../font/webfonts/fa-regular-400.ttf) format("truetype"),
-        url(../font/webfonts/fa-regular-400.svg#fontawesome) format("svg");
-}
-
-@font-face {
-  font-family: "Font_Awesome_5_Solid";
-  font-style: normal;
-  font-weight: 900;
-  src: url(../font/webfonts/fa-solid-900.eot);
-  src: url(../font/webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"),
-       url(../font/webfonts/fa-solid-900.woff2) format("woff2"),
-       url(../font/webfonts/fa-solid-900.woff) format("woff"),
-       url(../font/webfonts/fa-solid-900.ttf) format("truetype"),
-       url(../font/webfonts/fa-solid-900.svg#fontawesome) format("svg");
-}
-
-@font-face {
-  font-family: "Font_Awesome_5_Brands";
-  font-style: normal;
-  font-weight: 400;
-  src: url(../font/webfonts/fa-brands-400.eot);
-  src: url(../font/webfonts/fa-brands-400.eot?#iefix) format("embedded-opentype"),
-       url(../font/webfonts/fa-brands-400.woff2) format("woff2"),
-       url(../font/webfonts/fa-brands-400.woff) format("woff"),
-       url(../font/webfonts/fa-brands-400.ttf) format("truetype"),
-       url(../font/webfonts/fa-brands-400.svg#fontawesome) format("svg");
-}
+@import 'css/font.css';
 
 /* -----------------NORMALIZE----------------- */
 
@@ -49,38 +10,32 @@
   box-sizing: border-box;
 }
 
-body{
-  font-family: "Font_Awesome_5_Regular", Arial, sans-serif;
+body {
+  font-family: "Releway", Arial, sans-serif;
   font-size: 12pt;
   color: #404040;
 }
 
 /* -----------------TITLE----------------- */
 
+
+.title_green {
+  font-size: 1.6em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color:#81c683
+}
+
+.title_grey {
+  font-size: 1.6em;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
 h2 {
-  font-family: "Font_Awesome_5_Brands", "Font_Awesome_5_Regular", Arial, sans-serif;
-  font-size: 16pt;
+  font-size: 1.3em;
+  font-weight: bold;
   text-transform: uppercase;
-}
-
-h1, .green {
-  font-family: "Font_Awesome_5_Solid", "Font_Awesome_5_Regular", Arial, sans-serif;
-  font-size: 26pt;
-  text-transform: uppercase;
-}
-
-.green {color:#81c683}
-
-.title_aside {
-  display: block;
-  min-height: 48px;
-  background: #404040;
-  color: white;
-  position: absolute;
-  top: 0;
-  left:0;
-  width: 100%;
-  text-align: center;
 }
 
 /* -----------------GRID----------------- */
@@ -169,6 +124,23 @@ h1, .green {
   margin-left: minmax(30px, 26,8%);
 }
 
+/* -----------------TITLE----------------- */
+
+.title_aside {
+  display: block;
+  min-height: 48px;
+  background: #404040;
+  color: white;
+  position: absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  text-align: center;
+}
+
+h2.title_aside {
+  vertical-align: middle;
+}
 
 /* -----------------MEDIA QUERRIES----------------- */
 
