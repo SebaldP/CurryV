@@ -23,7 +23,7 @@ body {
   font-size: 1.6em;
   font-weight: bold;
   text-transform: uppercase;
-  color:#81c683
+  color:#81C784;
 }
 
 .title_grey {
@@ -42,7 +42,7 @@ h2 {
 
 .wrapper {
   display: grid;
-  grid-template-columns: 1fr 2.099fr;
+  grid-template-columns: 37.27vw 67.73vw;
   grid-template-rows: 330px 1.02fr 0.169fr 1.625fr 0.237fr 0.479fr;
   grid-template-areas:
   	"pics name"
@@ -53,57 +53,66 @@ h2 {
     "hobbies recommandation";
 }
 
+.id_pic {
+  object-fit: contain;
+}
+
 #pics {
-  min-height: 328px;
-  background: #81c683;
+  background: #81C784;
   grid-area: pics;
-  padding-top: 64px;
+  padding-top: 5.33em;
+  padding-bottom: 3.33em;
   text-align: center;
 }
 
 #name {
   background: white;
   grid-area: name;
-  padding-left: 65px;
-  padding-top: 119px;
+  padding: 8%;
 }
 
 #formation {
   background: white;
   grid-area: formation;
-  padding: 27px 54px 51px 65px;
+  padding: 2.3rem 6.82% 4.25rem 8%;
+  overflow-y: auto;
+  max-height: 456px;
 }
 
 #experiences {
   background: white;
   grid-area: experiences;
-  padding: 27px 54px 51px 65px;;
+  padding: 2.3rem 6.82% 4.25rem 8%;
+  overflow-y: auto;
+  max-height: 624px;
 }
 
 #recommandation {
   background: white;
   grid-area: recommandation;
-  padding: 27px 54px 51px 65px;
+  padding: 2.3rem 6.82% 4.25rem 8%;
+  overflow-y: auto;
+  max-height: 275px;
 }
 
 #description {
-  background: #81c683;
+  background: #81C784;
   grid-area: description;
-  padding: 84px 46px 39px 49px;
+  padding: 7rem 11.97% 3.5rem 12.76%;
   position: relative;
 }
 
 #hobbies {
-  background: #81c683;
+  background: #81C784;
   grid-area: hobbies;
-  padding: 84px 46px 39px 49px;
+  padding: 7rem 16.4% 3.5rem 16.4%;
   position: relative;
 }
 
 #contact {
-  background: #81c683;
+  background: #81C784;
   grid-area: contact;
-  padding: 84px 46px 39px 49px;
+  padding: 7rem 11.97% 3.5rem 12.76%;
   position: relative;
 }
 
@@ -116,12 +125,12 @@ h2 {
 }
 
 .date {
-  min-width: 182px;
+  width: 22.58%;
 }
-
+    
 .event {
-  min-width: 442px;
-  margin-left: minmax(30px, 26,8%);
+  width: 54.84%;
+  margin: 0 0 50px 26.8%;
 }
 
 /* -----------------TITLE----------------- */
@@ -138,16 +147,18 @@ h2 {
   text-align: center;
 }
 
+/*
 h2.title_aside {
   vertical-align: middle;
 }
+*/
 
 /* -----------------MEDIA QUERRIES----------------- */
 
 @media only screen and (max-width: 850px) {
   
   .wrapper {
-    grid-template-columns: 1fr;
+    grid-template-columns: 100vw;
     grid-template-rows: repeat(8, auto);
     grid-template-areas: 
       "pics"
@@ -160,15 +171,39 @@ h2.title_aside {
       "contact";
   }
 
+  #formation {
+    overflow-y: visible;
+    max-height: max-content;
+  }
+  
+  #experiences {
+    overflow-y: visible;
+    max-height: max-content;
+  }
+  
+  #recommandation {
+    overflow-y: visible;
+    max-height: max-content;
+  }
+
   .containerA, .containerB {
-    display:flex;
+    display: flex;
     flex-direction: column;
   }
+
+.date {
+    width: 85.18%;
+}
+      
+.event {
+    width: 85.18%;
+    margin: 0 0 50px 0;
+}
 
   #name {
     background: white;
     grid-area: name;
-    padding: 65;
+    padding: 8%;
     text-align: center;
   }
 }
