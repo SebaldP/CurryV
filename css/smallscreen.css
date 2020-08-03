@@ -127,7 +127,7 @@
     margin: 0 0 50px 0;
 }
 
-/* -----------------TITLE----------------- */
+/* -----------------TITLE H2----------------- */
 
 .title_aside {
     display: block;
@@ -139,11 +139,12 @@
     left:0;
     width: 100%;
     text-align: center;
-}
+  }
   
-h2.title_aside {
-    vertical-align: middle;
-}
+  #formation h2, #experiences h2, #recommandation h2 {
+    margin-bottom: 4.5em;
+    padding-left: 5em;
+  }
 
 }
 
@@ -246,8 +247,9 @@ h2.title_aside {
         text-align: center;
     }
       
-    h2.title_aside {
-        vertical-align: middle;
-    }
+    #formation h2, #experiences h2, #recommandation h2 {
+        margin-bottom: 4.5em;
+        padding-left: 5em;
+      }
 
 }

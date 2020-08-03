@@ -90,9 +90,7 @@ h2 {
 #recommandation {
   background: white;
   grid-area: recommandation;
-  padding: 2.3rem 6.82% 4.25rem 8%;
-  overflow-y: auto;
-  max-height: 275px;
+  padding: 2.3rem 6.82% 4.25rem 8%;;
 }
 
 #description {
@@ -133,18 +131,23 @@ h2 {
   margin: 0 0 50px 26.8%;
 }
 
-/* -----------------TITLE----------------- */
+/* -----------------TITLE H2----------------- */
 
 .title_aside {
   display: block;
-  min-height: 48px;
+  min-height: 3em;
   background: #404040;
   color: white;
   position: absolute;
   top: 0;
-  left:0;
+  left: 0;
   width: 100%;
   text-align: center;
+}
+
+#formation h2, #experiences h2, #recommandation h2 {
+  margin-bottom: 4.5em;
+  padding-left: 5em;
 }
 
 /*
