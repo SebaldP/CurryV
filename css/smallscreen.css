@@ -13,7 +13,6 @@
 body {
   font-family: "Releway", Arial, sans-serif;
   font-size: 12pt;
-  color: #404040;
 }
   
 /* -----------------TITLE----------------- */
@@ -23,7 +22,6 @@ body {
   font-size: 2em;
   font-weight: bold;
   text-transform: uppercase;
-  color:#81c683
 }
   
 .name--grey {
@@ -48,7 +46,7 @@ h2 {
   
   .wrapper {
     grid-template-columns: 100vw;
-    grid-template-rows: 1vh repeat(7, auto);
+    grid-template-rows: 100vh repeat(7, auto);
     grid-template-areas: 
     "id"
     "name"
@@ -60,18 +58,24 @@ h2 {
     "contact";
   }
 
+  .id__pic {
+    display: block;
+    margin: 5.33em auto 3.33em auto;
+  }
+  
+  .id__pic img {
+    width: auto;
+    max-height: 100%;
+  }
+  
   #id {
-    min-height: 328px;
     grid-area: id;
-    padding-top: 19.5%;
-    padding-bottom: 12.19%;
-    text-align: center;
+    padding: 0;
   }
   
   #name {
     grid-area: name;
-    padding: 8%;
-    text-align: center;
+    padding: 5.42em;
   }
   
   #formation {
@@ -135,10 +139,35 @@ h2 {
   #contact .title_aside_text {
     padding: 3rem 11.97% 3rem 12.76%;
   }
+
+  #contact p {
+    margin-bottom: 1em;
+  }
   
-  #formation h2, #experiences h2, #recommandation h2 {
+  .title_section {
+    display: flex;
+    align-items: center;
     margin-bottom: 4.5em;
-    padding-left: 5em;
+  }
+
+  /* -----------------ICON----------------- */
+
+  #hobbies_icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  #hobbies__reading, #hobbies__basketball, #hobbies__swimming {
+    height: 6em;
+    margin-right: 2em;
+    margin-bottom: 2em;
+  }
+
+  #hat, #suitcase, #pen {
+    height: 3em;
+    margin-right: 3em;
   }
 
 }
@@ -158,17 +187,24 @@ h2 {
     "hobbies recommandation";
   }
       
-  #id {
-    min-height: 328px;
-    grid-area: pics;
-    padding-top: 19.5%;
-    padding-bottom: 12.19%;
-    text-align: center;
+  .id__pic {
+    display: block;
+    margin: 5.33em auto 3.33em auto;
   }
-      
+  
+  .id__pic img {
+    width: auto;
+    max-height: 100%;
+  }
+  
+  #id {
+    grid-area: id;
+    padding: 0;
+  }
+  
   #name {
     grid-area: name;
-    padding: 8%;
+    padding: 5.42em;
   }
       
   #formation {
@@ -203,8 +239,24 @@ h2 {
   .containerA, .containerB {
     display:flex;
     flex-direction: column;
+    overflow-y: visible;
+    max-height: max-content;
   }
-          
+  
+  #experiences .containerA {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-y: visible;
+    max-height: max-content;
+  }
+  
+  .containerB {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   .date {
     width: 22.58%;
   }
@@ -232,10 +284,35 @@ h2 {
   #contact .title_aside_text {
     padding: 3rem 11.97% 3rem 12.76%;
   }
-      
-  #formation h2, #experiences h2, #recommandation h2 {
+  
+  #contact p {
+    margin-bottom: 1em;
+  }
+  
+  .title_section {
+    display: flex;
+    align-items: center;
     margin-bottom: 4.5em;
-    padding-left: 5em;
+  }
+
+  /* -----------------ICON----------------- */
+
+  #hobbies_icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  #hobbies__reading, #hobbies__basketball, #hobbies__swimming {
+    height: 6em;
+    margin-right: 2em;
+    margin-bottom: 2em;
+  }
+
+  #hat, #suitcase, #pen {
+    height: 3em;
+    margin-right: 3em;
   }
 
 }
