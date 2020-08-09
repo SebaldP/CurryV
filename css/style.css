@@ -1,212 +1,210 @@
-/* -----------------FONT----------------- */
-
-@import 'css/font.css';
-
-/* -----------------NORMALIZE----------------- */
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+/* STYLE.CSS -- COLOR */
 
 body {
-  font-family: "Releway", Arial, sans-serif;
-  font-size: 12pt;
   color: #404040;
 }
 
-/* -----------------TITLE----------------- */
-
-
-.title_green {
-  font-size: 1.8em;
-  font-weight: bold;
-  text-transform: uppercase;
+.name--green {
   color:#81C784;
 }
 
-.title_grey {
-  font-size: 1.8em;
-  font-weight: lighter;
-  text-transform: uppercase;
-}
-
-h2 {
-  font-size: 1.5em;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-/* -----------------GRID----------------- */
-
-.wrapper {
-  display: grid;
-  grid-template-columns: 37.27vw 67.73vw;
-  grid-template-rows: 330px 1.02fr 0.169fr 1.625fr 0.237fr 0.479fr;
-  grid-template-areas:
-  	"pics name"
-  	"contact formation"
-  	"description formation"
-  	"description experiences"
-  	"description recommandation"
-    "hobbies recommandation";
-}
-
-.id_pic {
-  object-fit: contain;
-}
-
-#pics {
+#id, #description, #hobbies, #contact {
   background: #81C784;
-  grid-area: pics;
-  padding-top: 5.33em;
-  padding-bottom: 3.33em;
-  text-align: center;
 }
 
-#name {
+#name, #formation, #experiences, #recommandation {
   background: white;
-  grid-area: name;
-  padding: 8%;
 }
-
-#formation {
-  background: white;
-  grid-area: formation;
-  padding: 2.3rem 6.82% 4.25rem 8%;
-  overflow-y: auto;
-  max-height: 456px;
-}
-
-#experiences {
-  background: white;
-  grid-area: experiences;
-  padding: 2.3rem 6.82% 4.25rem 8%;
-  overflow-y: auto;
-  max-height: 624px;
-}
-
-#recommandation {
-  background: white;
-  grid-area: recommandation;
-  padding: 2.3rem 6.82% 4.25rem 8%;;
-}
-
-#description {
-  background: #81C784;
-  grid-area: description;
-  padding: 7rem 11.97% 3.5rem 12.76%;
-  position: relative;
-}
-
-#hobbies {
-  background: #81C784;
-  grid-area: hobbies;
-  padding: 7rem 16.4% 3.5rem 16.4%;
-  position: relative;
-}
-
-#contact {
-  background: #81C784;
-  grid-area: contact;
-  padding: 7rem 11.97% 3.5rem 12.76%;
-  position: relative;
-}
-
-/* -----------------FLEXBOX----------------- */
-
-.containerA, .containerB {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.date {
-  width: 22.58%;
-}
-    
-.event {
-  width: 54.84%;
-  margin: 0 0 50px 26.8%;
-}
-
-/* -----------------TITLE H2----------------- */
 
 .title_aside {
-  display: block;
-  min-height: 2em;
   background: #404040;
   color: #81C784;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  text-align: center;
 }
 
-#formation h2, #experiences h2, #recommandation h2 {
-  margin-bottom: 4.5em;
-  padding-left: 5em;
+.contact__mail--link:link {
+  color: #404040;
+  text-decoration: none;
 }
 
+.contact__mail--link:hover {
+  color: #404040;
+  text-decoration: none;
+}
+
+.contact__mail--link:visited {
+  color: #404040;
+  text-decoration: none;
+}
+
+.contact__mail--link:active {
+  color: #404040;
+  text-decoration: none;
+}
+
+.contact__adress--link:link {
+  color: #404040;
+  text-decoration: none;
+}
+
+.contact__adress--link:hover {
+  color: #404040;
+  text-decoration: none;
+}
+
+.contact__adress--link:visited {
+  color: #404040;
+  text-decoration: none;
+}
+
+.contact__adress--link:active {
+  color: #404040;
+  text-decoration: none;
+}
+
+.contact__website--link:link {
+  color: #404040;
+  text-decoration: none;
+}
+
+.contact__website--link:hover {
+  color: #404040;
+  text-decoration: none;
+}
+
+.contact__website--link:visited {
+  color: #404040;
+  text-decoration: none;
+}
+
+.contact__website--link:active {
+  color: #404040;
+  text-decoration: none;
+}
+
+/* ---------------ICONS SECTION--------------- */
+
+#hat__top, #hat__rope, #hat__bottom, #suitcase__element, #pen__element {
+  fill:#81C784;
+}
+
+#hat__background, #suitcase__background, #pen__background {
+  fill:#FFFFFF;
+  fill-opacity: 0;
+}
+
+
+/* ---------------ICONS ASIDE--------------- */
+
+@keyframes fadein {
+  0%{
+    -webkit-fill-opacity: 0;
+    fill-opacity: 0;
+  }
+  50%{
+    -webkit-fill-opacity: 1;
+    fill-opacity: 1;
+  }
+  to{
+    -webkit-fill-opacity: 0;
+    fill-opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0%{
+    -webkit-transform:scaleX(1);
+    transform:scaleX(1)
+  }
+  50%{
+    -webkit-transform:scale3d(1.05,1.05,1.05);
+    transform:scale3d(1.05,1.05,1.05)
+  }
+  to{
+    -webkit-transform:scaleX(1);
+    transform:scaleX(1)
+  }
+}
+
+#hobbies__swimming:hover, #hobbies__basketball:hover, #hobbies__reading:hover {
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-delay: alternate;
+  animation-timing-function: ease-in, ease-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: pulse;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: alternate;
+  -webkit-animation-timing-function: ease-in, ease-out;
+  -webkit-animation-iteration-count: infinite;
+}
+
+#hobbies__swimming__background {
+  fill:#FFFFFF;
+  fill-opacity: 0;
+}
+
+#hobbies__swimming:hover #hobbies__swimming__background {
+  animation-duration: 1.5s;
+  animation-name: fadein;
+  animation-delay: alternate;
+  animation-timing-function: ease-in, ease-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-name: fadein;
+  -webkit-animation-delay: alternate;
+  -webkit-animation-timing-function: ease-in, ease-out;
+  -webkit-animation-iteration-count: infinite;
+}
+
+#hobbies__swimming__element {
+  fill: #404040;
+}
+
+#hobbies__basketball__ball-background {
+  fill:#FFFFFF;
+  fill-opacity: 0
+}
+
+#hobbies__basketball:hover #hobbies__basketball__ball-background {
+  animation-duration: 1.5s;
+  animation-name: fadein;
+  animation-delay: alternate;
+  animation-timing-function: ease-in, ease-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-name: fadein;
+  -webkit-animation-delay: alternate;
+  -webkit-animation-timing-function: ease-in, ease-out;
+  -webkit-animation-iteration-count: infinite;
+}
+
+#hobbies__basketball__ball-element, #hobbies__basketball__basket {
+  fill: #404040;
+}
+
+#hobbies__reading__first__cover, #hobbies__reading__middle__cover, #hobbies__reading__last__cover {
+  fill:#FFFFFF;
+  fill-opacity: 0
+}
+
+#hobbies__reading:hover #hobbies__reading__first__cover, #hobbies__reading:hover #hobbies__reading__middle__cover, #hobbies__reading:hover #hobbies__reading__last__cover {
+  animation-duration: 1.5s;
+  animation-name: fadein;
+  animation-delay: alternate;
+  animation-timing-function: ease-in, ease-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-name: fadein;
+  -webkit-animation-delay: alternate;
+  -webkit-animation-timing-function: ease-in, ease-out;
+  -webkit-animation-iteration-count: infinite;
+}
+
+#hobbies__reading__first__book, #hobbies__reading__middle__book, #hobbies__reading__last__book, #hobbies__reading__background {
+  fill: #404040;
+}
 /*
-h2.title_aside {
-  vertical-align: middle;
+.title_aside_text {
+  background-color: aqua;
 }
 */
-
-/* -----------------MEDIA QUERRIES----------------- */
-
-@media only screen and (max-width: 850px) {
-  
-  .wrapper {
-    grid-template-columns: 100vw;
-    grid-template-rows: repeat(8, auto);
-    grid-template-areas: 
-      "pics"
-      "name"
-      "description"
-      "experiences"
-      "formation"
-      "recommandation"
-      "hobbies"
-      "contact";
-  }
-
-  #formation {
-    overflow-y: visible;
-    max-height: max-content;
-  }
-  
-  #experiences {
-    overflow-y: visible;
-    max-height: max-content;
-  }
-  
-  #recommandation {
-    overflow-y: visible;
-    max-height: max-content;
-  }
-
-  .containerA, .containerB {
-    display: flex;
-    flex-direction: column;
-  }
-
-.date {
-    width: 85.18%;
-}
-      
-.event {
-    width: 85.18%;
-    margin: 0 0 50px 0;
-}
-
-  #name {
-    background: white;
-    grid-area: name;
-    padding: 8%;
-    text-align: center;
-  }
-}
