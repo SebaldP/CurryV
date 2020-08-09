@@ -73,7 +73,7 @@ h2 {
 
 #name {
   grid-area: name;
-  padding: 5.42em;
+  padding: 9em 5.42em 9em 5.42em;
 }
 
 #formation {
@@ -137,15 +137,6 @@ h2 {
 .event {
   width: 54.84%;
   margin: 0 0 50px 26.8%;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.containerA::-webkit-scrollbar {
-  display: none;
-}
-.containerA {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
 }
 
 /* -----------------TITLE H2----------------- */
@@ -213,7 +204,7 @@ h2 {
   
   .wrapper {
     grid-template-columns: 100vw;
-    grid-template-rows: repeat(8, auto);
+    grid-template-rows: repeat(8, max-content);
     grid-template-areas: 
       "id"
       "name"
@@ -226,14 +217,14 @@ h2 {
   }
 
   #name {
-        display: block;
-        grid-area: name;
-        padding: 5.42em;
+    display: block;
+    grid-area: name;
+    padding: 5.42em;
   }
 
   #formation {
-        overflow-y: visible;
-        height: max-content;
+    overflow-y: visible;
+    height: max-content;
   }
   
   #experiences {
@@ -250,7 +241,7 @@ h2 {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    width: 22.58%;
+    width: 85.18%;
   }
         
   .event {

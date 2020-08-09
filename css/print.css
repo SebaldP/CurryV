@@ -1,0 +1,16 @@
+/* -----------------FONT----------------- */
+
+@import 'css/font.css';
+
+/* -----------------NORMALIZE----------------- */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+  
+body {
+  font-family: "Releway", Arial, sans-serif;
+  font-size: 12pt;
+}
