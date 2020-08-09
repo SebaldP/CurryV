@@ -81,19 +81,7 @@ body {
   text-decoration: none;
 }
 
-/* ---------------ICONS SECTION--------------- */
-
-#hat__top, #hat__rope, #hat__bottom, #suitcase__element, #pen__element {
-  fill:#81C784;
-}
-
-#hat__background, #suitcase__background, #pen__background {
-  fill:#FFFFFF;
-  fill-opacity: 0;
-}
-
-
-/* ---------------ICONS ASIDE--------------- */
+/* ---------------ANIMATION--------------- */
 
 @keyframes fadein {
   0%{
@@ -124,6 +112,55 @@ body {
     transform:scaleX(1)
   }
 }
+
+@keyframes strong_pulse {
+  0%{
+    -webkit-transform:scaleX(1);
+    transform:scaleX(1)
+  }
+  50%{
+    -webkit-transform:scale3d(1.4,1.4,1.4);
+    transform:scale3d(1.4,1.4,1.4)
+  }
+  to{
+    -webkit-transform:scaleX(1);
+    transform:scaleX(1)
+  }
+}
+
+/* ---------------ICONS SECTION--------------- */
+
+#formation:hover #hat, #experiences:hover #suitcase, #recommandation:hover #pen {
+  animation-name: strong_pulse;
+  animation-duration: 1s;
+  animation-delay: alternate;
+  animation-timing-function: ease-in, ease-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: pulse;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: alternate;
+  -webkit-animation-timing-function: ease-in, ease-out;
+  -webkit-animation-iteration-count: infinite;
+}
+
+#hat__top, #hat__rope, #hat__bottom, #suitcase__element, #pen__element {
+  fill:#81C784;
+}
+
+#hat__background, #suitcase__background, #pen__background {
+  fill:#FFFFFF;
+  fill-opacity: 0;
+}
+
+.double_point {
+  fill:#81C784;
+}
+
+.point {
+  fill:#81C784;
+}
+
+/* ---------------ICONS ASIDE--------------- */
 
 #hobbies__swimming:hover, #hobbies__basketball:hover, #hobbies__reading:hover {
   animation-name: pulse;
@@ -208,3 +245,13 @@ body {
   background-color: aqua;
 }
 */
+
+/* ---------------SECTION--------------- */
+
+.containerA:hover {
+  background-color: #E8F5E9;
+}
+
+#formation:hover #formation_title, #experiences:hover #experiences_title, #recommandation:hover #recommandation_title {
+  color: #81C784;
+}

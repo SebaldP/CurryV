@@ -81,11 +81,15 @@ h2 {
   #formation {
     grid-area: formation;
     padding: 2.3rem 6.82% 4.25rem 8%;
+    overflow-y: visible;
+    height: max-content;
   }
   
   #experiences {
     grid-area: experiences;
     padding: 2.3rem 6.82% 4.25rem 8%;
+    overflow-y: visible;
+    height: max-content;
   }
   
   #recommandation {
@@ -113,7 +117,10 @@ h2 {
   }
         
   .date {
-    width: 85.18%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 22.58%;
   }
         
   .event {
@@ -170,13 +177,23 @@ h2 {
     margin-right: 3em;
   }
 
+  .double_point {
+    height: 1em;
+    margin-right: 1.5em;
+  }
+  
+  .point {
+    height: 1em;
+    margin-right: 1.5em;
+  }
+
 }
 
 @media only screen and (orientation: landscape) {
 
   .wrapper {
     display: grid;
-    grid-template-columns: 37.27vw 67.73vw;
+    grid-template-columns: 37.27vw 62.73vw;
     grid-template-rows: minmax(330px, max-content) 1.02fr 0.169fr 1.625fr 0.237fr 0.479fr;
     grid-template-areas:
     "id name"
@@ -210,11 +227,15 @@ h2 {
   #formation {
     grid-area: formation;
     padding: 2.3rem 6.82% 4.25rem 8%;
+    overflow-y: visible;
+    height: max-content;
   }
       
   #experiences {
     grid-area: experiences;
     padding: 2.3rem 6.82% 4.25rem 8%;
+    overflow-y: visible;
+    height: max-content;
   }
       
   #recommandation {
@@ -258,6 +279,9 @@ h2 {
   }
 
   .date {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     width: 22.58%;
   }
           
@@ -313,6 +337,16 @@ h2 {
   #hat, #suitcase, #pen {
     height: 3em;
     margin-right: 3em;
+  }
+
+  .double_point {
+    height: 1em;
+    margin-right: 1.5em;
+  }
+  
+  .point {
+    height: 1em;
+    margin-right: 1.5em;
   }
 
 }

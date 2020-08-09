@@ -45,7 +45,7 @@ h2 {
 
 .wrapper {
   display: grid;
-  grid-template-columns: 37.27vw 67.73vw;
+  grid-template-columns: 37.27vw 62.73vw;
   grid-template-rows: minmax(330px, max-content) 1.02fr 0.169fr 1.625fr 0.237fr 0.479fr;
   grid-template-areas:
   	"id name"
@@ -128,12 +128,24 @@ h2 {
 }
 
 .date {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   width: 22.58%;
 }
     
 .event {
   width: 54.84%;
   margin: 0 0 50px 26.8%;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.containerA::-webkit-scrollbar {
+  display: none;
+}
+.containerA {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 
 /* -----------------TITLE H2----------------- */
@@ -185,70 +197,77 @@ h2 {
   margin-right: 3em;
 }
 
+.double_point {
+  height: 1em;
+  margin-right: 1.5em;
+}
+
+.point {
+  height: 1em;
+  margin-right: 1.5em;
+}
+
 /* -----------------MEDIA QUERRIES----------------- */
 
 @media only screen and (max-width: 850px) {
   
   .wrapper {
-        grid-template-columns: 100vw;
-        grid-template-rows: repeat(8, auto);
-        grid-template-areas: 
-        "id"
-        "name"
-        "description"
-        "experiences"
-        "formation"
-        "recommandation"
-        "hobbies"
-        "contact";
-    }
+    grid-template-columns: 100vw;
+    grid-template-rows: repeat(8, auto);
+    grid-template-areas: 
+      "id"
+      "name"
+      "description"
+      "experiences"
+      "formation"
+      "recommandation"
+      "hobbies"
+      "contact";
+  }
 
   #name {
         display: block;
         grid-area: name;
-        padding: 8%;
-        text-align: center;
-    }
+        padding: 5.42em;
+  }
 
   #formation {
-        overflow-y: hidden;
+        overflow-y: visible;
         height: max-content;
-    }
+  }
   
   #experiences {
-        overflow-y: hidden;
-        height: max-content;
-    }
-  
-  #recommandation {
-        overflow-y: hidden;
-        height: max-content;
-    }
+    overflow-y: visible;
+    height: max-content;
+  }
 
   .containerA, .containerB {
-        display: flex;
-        flex-direction: column;
-    }
+    display: flex;
+    flex-direction: column;
+  }
 
   .date {
-        width: 85.18%;
-    }
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 22.58%;
+  }
         
   .event {
-        width: 85.18%;
-        margin: 0 0 50px 0;
-    }
+    width: 85.18%;
+    margin: 0 0 50px 0;
+  }
 
   #description .title_aside_text {
-        padding: 3rem 11.97% 3rem 12.76%;
-    }
+    padding: 3rem 11.97% 3rem 12.76%;
+  }
   
   #hobbies .title_aside_text {
-        padding: 3rem 11.97% 3rem 12.76%;
-    }
+    padding: 3rem 11.97% 3rem 12.76%;
+  }
   
   #contact .title_aside_text {
-        padding: 3rem 11.97% 3rem 12.76%;
-    }
+    padding: 3rem 11.97% 3rem 12.76%;
+  }
 
 }
