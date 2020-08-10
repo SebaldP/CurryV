@@ -9,35 +9,39 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+html {
+  font-size: 62.5%;
+}
   
 body {
   font-family: "Releway", Arial, sans-serif;
-  font-size: 12pt;
+  font-size: 1.2rem;
 }
   
 /* -----------------TITLE----------------- */
   
   
 .name--green {
-  font-size: 2em;
+  font-size: 3rem;
   font-weight: bold;
   text-transform: uppercase;
 }
-  
+
 .name--grey {
-  font-size: 2em;
+  font-size: 3rem;
   font-weight: lighter;
   text-transform: uppercase;
 }
-  
+
 h2 {
-  font-size: 1.6em;
+  font-size: 1.5rem;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 .name__subtitle {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 /* -----------------MEDIA QUERRIES----------------- */
@@ -60,7 +64,7 @@ h2 {
 
   .id__pic {
     display: block;
-    margin: 5.33em auto 3.33em auto;
+    margin: 6.4rem auto 4rem auto;
   }
   
   .id__pic img {
@@ -75,26 +79,27 @@ h2 {
   
   #name {
     grid-area: name;
-    padding: 5.42em;
+    padding: 6.5rem;
+    align-content: center;
   }
   
   #formation {
     grid-area: formation;
-    padding: 2.3rem 6.82% 4.25rem 8%;
+    padding: 2.7rem 5.5rem 5.1rem 6.5rem;
     overflow-y: visible;
     height: max-content;
   }
   
   #experiences {
     grid-area: experiences;
-    padding: 2.3rem 6.82% 4.25rem 8%;
+    padding: 2.7rem 5.5rem 5.1rem 6.5rem;
     overflow-y: visible;
     height: max-content;
   }
   
   #recommandation {
     grid-area: recommandation;
-    padding: 2.3rem 6.82% 4.25rem 8%;
+    padding: 2.7rem 5.5rem 5.1rem 6.5rem;
   }
   
   #description {
@@ -120,41 +125,40 @@ h2 {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    width: 85.18%;
+    margin: 0 0 2.5rem 0;
   }
         
   .event {
-    width: 85.18%;
-    margin: 0 0 50px 0;
+    margin: 0 0 5rem 0;
   }
 
   /* -----------------TITLE H2----------------- */
 
   .title_aside {
     text-align: center;
-    padding: 0.8em 0;
+    padding: 1.2rem 0;
   }
   
   #description .title_aside_text {
-    padding: 3rem 11.97% 3rem 12.76%;
+    padding: 3.6rem 4.9rem 3.9rem 4.9rem;
   }
   
   #hobbies .title_aside_text {
-    padding: 3rem 16.4% 3rem 16.4%;
+    padding: 3.6rem 4.9rem 3.9rem 4.9rem;
   }
   
   #contact .title_aside_text {
-    padding: 3rem 11.97% 3rem 12.76%;
+    padding: 3.6rem 4.9rem 3.9rem 4.9rem;
   }
 
-  #contact p {
-    margin-bottom: 1em;
+  #contact p:nth-child(n+2) {
+    margin-top: 2.4rem;
   }
   
   .title_section {
     display: flex;
     align-items: center;
-    margin-bottom: 4.5em;
+    margin-bottom: 7.2rem;
   }
 
   /* -----------------ICON----------------- */
@@ -164,27 +168,26 @@ h2 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    width: 100%;
   }
 
   #hobbies__reading, #hobbies__basketball, #hobbies__swimming {
-    height: 6em;
-    margin-right: 2em;
-    margin-bottom: 2em;
+    height: 6.6rem;
   }
 
   #hat, #suitcase, #pen {
-    height: 3em;
-    margin-right: 3em;
+    height: 3rem;
+    margin-right: 3.6rem;
   }
 
   .double_point {
-    height: 1em;
-    margin-right: 1.5em;
+    height: 1.2rem;
+    margin-right: 1.8rem;
   }
   
   .point {
-    height: 1em;
-    margin-right: 1.5em;
+    height: 1.2rem;
+    margin-right: 1.8rem;
   }
 
 }
@@ -194,7 +197,7 @@ h2 {
   .wrapper {
     display: grid;
     grid-template-columns: 37.27vw 62.73vw;
-    grid-template-rows: minmax(330px, max-content) 1.02fr 0.169fr 1.625fr 0.237fr 0.479fr;
+    grid-template-rows: minmax(33rem, max-content) 1.02fr 0.169fr 1.625fr 0.237fr 0.479fr;
     grid-template-areas:
     "id name"
     "contact formation"
@@ -206,7 +209,7 @@ h2 {
       
   .id__pic {
     display: block;
-    margin: 5.33em auto 3.33em auto;
+    margin: 6.4rem auto 4rem auto;
   }
   
   .id__pic img {
@@ -221,26 +224,22 @@ h2 {
   
   #name {
     grid-area: name;
-    padding: 5.42em;
+    padding: 11.9rem 6.5rem 12.1rem 6.5rem;
   }
       
   #formation {
     grid-area: formation;
-    padding: 2.3rem 6.82% 4.25rem 8%;
-    overflow-y: visible;
-    height: max-content;
+    padding: 2.7rem 5.5rem 5.1rem 6.5rem;
   }
       
   #experiences {
     grid-area: experiences;
-    padding: 2.3rem 6.82% 4.25rem 8%;
-    overflow-y: visible;
-    height: max-content;
+    padding: 2.7rem 5.5rem 5.1rem 6.5rem;
   }
       
   #recommandation {
     grid-area: recommandation;
-    padding: 2.3rem 6.82% 4.25rem 8%;
+    padding: 2.7rem 5.5rem 5.1rem 6.5rem;
   }
       
   #description {
@@ -260,16 +259,12 @@ h2 {
   .containerA, .containerB {
     display:flex;
     flex-direction: column;
-    overflow-y: visible;
-    max-height: max-content;
   }
   
   #experiences .containerA {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    overflow-y: visible;
-    max-height: max-content;
   }
   
   .containerB {
@@ -287,36 +282,36 @@ h2 {
           
   .event {
     width: 54.84%;
-    margin: 0 0 50px 26.8%;
+    margin: 0 0 5rem 12.7rem;
   }
 
   /* -----------------TITLE----------------- */
 
   .title_aside {
     text-align: center;
-    padding: 0.8em 0;
+    padding: 1.2rem 0;
   }
       
   #description .title_aside_text {
-    padding: 3rem 11.97% 3rem 12.76%;
+    padding: 3.6rem 4.9rem 3.9rem 4.9rem;
   }
       
   #hobbies .title_aside_text {
-    padding: 3rem 16.4% 3rem 16.4%;
+    padding: 3.6rem 4.9rem 3.9rem 4.9rem;
   }
       
   #contact .title_aside_text {
-    padding: 3rem 11.97% 3rem 12.76%;
+    padding: 3.6rem 4.9rem 3.9rem 4.9rem;
   }
   
-  #contact p {
-    margin-bottom: 1em;
+  #contact p:nth-child(n+2) {
+    margin-top: 2.4rem;
   }
   
   .title_section {
     display: flex;
     align-items: center;
-    margin-bottom: 4.5em;
+    margin-bottom: 7.2rem;
   }
 
   /* -----------------ICON----------------- */
@@ -326,27 +321,26 @@ h2 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    width: 100%;
   }
 
   #hobbies__reading, #hobbies__basketball, #hobbies__swimming {
-    height: 6em;
-    margin-right: 2em;
-    margin-bottom: 2em;
+    height: 6.6rem;
   }
 
   #hat, #suitcase, #pen {
-    height: 3em;
-    margin-right: 3em;
+    height: 3rem;
+    margin-right: 3.6rem;
   }
-
+  
   .double_point {
-    height: 1em;
-    margin-right: 1.5em;
+    height: 1.2rem;
+    margin-right: 1.8rem;
   }
   
   .point {
-    height: 1em;
-    margin-right: 1.5em;
+    height: 1.2rem;
+    margin-right: 1.8rem;
   }
 
 }
