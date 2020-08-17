@@ -361,6 +361,7 @@ h2 {
 
   #fullscreen-video-bg video{
     min-height: 100%;
+    min-width: 100%;
   }
 
   #fullscreen-video-bg--overlay{
@@ -372,6 +373,6 @@ h2 {
     height: 100%;
     z-index: -1;
     background-color: #81C784;
-    opacity: 0.8;
+    opacity: 0.7;
   }
 }
