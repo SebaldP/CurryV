@@ -18,6 +18,10 @@ body {
   font-family: "Releway", Arial, sans-serif;
   font-size: 1.2rem;
 }
+
+#fullscreen-video-bg, #fullscreen-video-bg--overlay{
+  display: none;
+}
   
 /* -----------------TITLE----------------- */
   
@@ -34,6 +38,10 @@ body {
   text-transform: uppercase;
 }
 
+#name h1{
+  text-align: center;
+}
+
 h2 {
   font-size: 1.5rem;
   font-weight: bold;
@@ -42,6 +50,7 @@ h2 {
 
 .name__subtitle {
   font-size: 1.5rem;
+  text-align: center;
 }
 
 /* -----------------MEDIA QUERRIES----------------- */
@@ -80,20 +89,19 @@ h2 {
   #name {
     grid-area: name;
     padding: 6.5rem;
-    align-content: center;
   }
   
   #formation {
     grid-area: formation;
     padding: 2.7rem 5.5rem 5.1rem 6.5rem;
-    overflow-y: visible;
+    overflow-y: unset;
     height: max-content;
   }
   
   #experiences {
     grid-area: experiences;
     padding: 2.7rem 5.5rem 5.1rem 6.5rem;
-    overflow-y: visible;
+    overflow-y: unset;
     height: max-content;
   }
   

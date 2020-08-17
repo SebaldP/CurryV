@@ -11,10 +11,196 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 12pt;
 }
   
 body {
   font-family: "Releway", Arial, sans-serif;
   font-size: 12pt;
+}
+
+#fullscreen-video-bg, #fullscreen-video-bg--overlay{
+  display: none;
+}
+
+/* -----------------TITLE----------------- */
+
+
+.name--green {
+  font-size: 43pt;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.name--grey {
+  font-size: 43pt;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 20pt;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.name__subtitle {
+  font-size: 20pt;
+}
+
+
+/* -----------------GRID----------------- */
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 384px 806px;
+  grid-template-rows: minmax(330px, max-content) 1.02fr 0.169fr 1.625fr 0.237fr 0.479fr;
+  grid-template-areas:
+  	"id name"
+  	"contact formation"
+  	"description formation"
+  	"description experiences"
+  	"description recommandation"
+    "hobbies recommandation";
+}
+
+.id__pic {
+  display: block;
+  margin: 64px auto 40px auto;
+}
+
+.id__pic img {
+  width: auto;
+  max-height: 100%;
+}
+
+#id {
+  grid-area: id;
+  padding: 0;
+}
+
+#name {
+  grid-area: name;
+  padding: 119px 65px 121px 65px;
+}
+
+#formation {
+  grid-area: formation;
+  padding: 27px 55px 51px 65px;
+}
+
+#experiences {
+  grid-area: experiences;
+  padding: 27px 55px 51px 65px;
+}
+
+#recommandation {
+  grid-area: recommandation;
+  padding: 27px 55px 51px 65px;
+}
+
+#description {
+  grid-area: description;
+}
+
+#hobbies {
+  grid-area: hobbies;
+}
+
+#contact {
+  grid-area: contact;
+}
+
+/* -----------------FLEXBOX----------------- */
+
+#formation .containerA {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  max-height: 456px;
+}
+
+#experiences .containerA {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  max-height: 624px;
+}
+
+.containerB {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.date {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 22.58%;
+}
+    
+.event {
+  width: 54.84%;
+  margin: 0 0 5rem 12.7rem;
+}
+
+/* -----------------TITLE H2----------------- */
+
+.title_aside {
+  text-align: center;
+  padding: 12px 0;
+}
+
+#description .title_aside_text {
+  padding: 36px 49px 39px 49px;
+}
+
+#hobbies .title_aside_text {
+  padding: 36px 49px 39px 49px;
+}
+
+#contact .title_aside_text {
+  padding: 36px 49px 39px 49px;
+}
+
+#contact p:nth-child(n+2) {
+  margin-top: 24px;
+}
+
+.title_section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 72px;
+}
+
+/* -----------------ICON----------------- */
+
+#hobbies_icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+#hobbies__reading, #hobbies__basketball, #hobbies__swimming {
+  height: 66px;
+}
+
+#hat, #suitcase, #pen {
+  height: 43px;
+  margin-right: 36px;
+}
+
+.double_point {
+  height: 12px;
+  margin-right: 18px;
+}
+
+.point {
+  height: 12px;
+  margin-right: 18px;
 }

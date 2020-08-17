@@ -19,6 +19,10 @@ body {
   font-size: 1.2rem;
 }
 
+#fullscreen-video-bg, #fullscreen-video-bg--overlay{
+  display: none;
+}
+
 /* -----------------TITLE----------------- */
 
 
@@ -49,7 +53,7 @@ h2 {
 
 .wrapper {
   display: grid;
-  grid-template-columns: 37.27vw 62.73vw;
+  grid-template-columns: 37.27% 62.73%;
   grid-template-rows: minmax(33rem, max-content) 1.02fr 0.169fr 1.625fr 0.237fr 0.479fr;
   grid-template-areas:
   	"id name"
@@ -206,7 +210,7 @@ h2 {
 @media only screen and (max-width: 850px) {
   
   .wrapper {
-    grid-template-columns: 100vw;
+    grid-template-columns: 100%;
     grid-template-rows: repeat(8, max-content);
     grid-template-areas: 
       "id"
@@ -222,16 +226,15 @@ h2 {
   #name {
     grid-area: name;
     padding: 6.5rem;
-    align-content: center;
   }
 
   #formation {
-    overflow-y: visible;
+    overflow-y: unset;
     height: max-content;
   }
   
   #experiences {
-    overflow-y: visible;
+    overflow-y: unset;
     height: max-content;
   }
 
@@ -269,4 +272,106 @@ h2 {
     padding: 3.6rem 4.9rem 3.6rem 4.9rem;
   }
 
+  #name h1{
+    text-align: center;
+  }
+  
+  .name__subtitle {
+    text-align: center;
+  }
+  
+
+}
+
+@media only screen and (min-width: 1300px) {
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 384px 806px;
+    grid-template-rows: minmax(33rem, max-content) repeat(5, auto);
+    grid-template-areas:
+      "id name"
+      "contact formation"
+      "description formation"
+      "description experiences"
+      "description recommandation"
+      "hobbies recommandation";
+    grid-gap: 2vw;
+    margin: 2vw;
+    justify-content: space-evenly;
+  }
+  
+  .id__pic {
+    display: block;
+    margin: 6.4rem auto 4rem auto;
+  }
+  
+  .id__pic img {
+    width: auto;
+    max-height: 100%;
+  }
+  
+  #id {
+    grid-area: id;
+    padding: 0;
+  }
+  
+  #name {
+    grid-area: name;
+    padding: 11.9rem 6.5rem 12.1rem 6.5rem;
+  }
+  
+  #formation {
+    grid-area: formation;
+    padding: 2.7rem 5.5rem 5.1rem 6.5rem;
+  }
+  
+  #experiences {
+    grid-area: experiences;
+    padding: 2.7rem 5.5rem 5.1rem 6.5rem;
+  }
+  
+  #recommandation {
+    grid-area: recommandation;
+    padding: 2.7rem 5.5rem 5.1rem 6.5rem;
+  }
+  
+  #description {
+    grid-area: description;
+  }
+  
+  #hobbies {
+    grid-area: hobbies;
+  }
+  
+  #contact {
+    grid-area: contact;
+  }
+
+  #fullscreen-video-bg{
+    display: initial;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    overflow: hidden;
+  }
+
+  #fullscreen-video-bg video{
+    min-height: 100%;
+  }
+
+  #fullscreen-video-bg--overlay{
+    display: initial;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: #81C784;
+    opacity: 0.8;
+  }
 }
