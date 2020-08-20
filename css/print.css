@@ -56,26 +56,26 @@ h2 {
   grid-template-columns: 384px 806px;
   grid-template-rows: minmax(330px, max-content) 1.02fr 0.169fr 1.625fr 0.237fr 0.479fr;
   grid-template-areas:
-  	"id name"
+  	"pic name"
   	"contact formation"
   	"description formation"
   	"description experiences"
-  	"description recommandation"
-    "hobbies recommandation";
+  	"description recommandations"
+    "hobbies recommandations";
 }
 
-.id__pic {
+.pic__element {
   display: block;
   margin: 64px auto 40px auto;
 }
 
-.id__pic img {
+.pic__element img {
   width: auto;
   max-height: 100%;
 }
 
-#id {
-  grid-area: id;
+#pic {
+  grid-area: pic;
   padding: 0;
 }
 
@@ -94,8 +94,8 @@ h2 {
   padding: 27px 55px 51px 65px;
 }
 
-#recommandation {
-  grid-area: recommandation;
+#recommandations {
+  grid-area: recommandations;
   padding: 27px 55px 51px 65px;
 }
 
@@ -139,12 +139,11 @@ h2 {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  width: 22.58%;
+  width: 21.4rem;
 }
     
 .event {
-  width: 54.84%;
-  margin: 0 0 5rem 12.7rem;
+  margin: 0.5rem 0 5rem 3rem;
 }
 
 /* -----------------TITLE H2----------------- */

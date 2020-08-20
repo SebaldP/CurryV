@@ -168,7 +168,7 @@ body {
 
 /* ---------------ICONS SECTION--------------- */
 
-#formation:hover #hat, #experiences:hover #suitcase, #recommandations:hover #pen {
+#formation:hover #hat, #experiences:hover #suitcase, #recommandation:hover #pen {
   animation-name: strong_pulse;
   animation-duration: 1s;
   animation-delay: alternate;
@@ -285,15 +285,6 @@ body {
 */
 
 /* ---------------SECTION--------------- */
-
-.containerA {
-  background-color: white;
-  transition: color 0.3s;
-}
-
-.containerA:hover {
-  background-color: #E8F5E9;
-}
 
 #formation:hover #formation_title, #experiences:hover #experiences_title, #recommandations:hover #recommandations_title {
   animation-name: change_color--start;
