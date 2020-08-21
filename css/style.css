@@ -8,6 +8,14 @@ body {
   color:#81C784;
 }
 
+#name div{
+  background-color:#81C784;
+}
+
+.containerA, .containerB {
+  border-top: 2px solid #81C784;
+}
+
 #pic, #description, #hobbies, #contact {
   background: #81C784;
 }
@@ -317,8 +325,9 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #81C784; 
+  background: #E8F5E9; 
   border-radius: 10px;
+  /* background: #81C784; */
 }
 
 ::-webkit-scrollbar-thumb:hover {

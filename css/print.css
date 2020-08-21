@@ -28,12 +28,14 @@ body {
 
 .name--green {
   font-size: 43pt;
+  line-height: 43px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 .name--grey {
   font-size: 43pt;
+  line-height: 43px;
   font-weight: lighter;
   text-transform: uppercase;
 }
@@ -45,7 +47,14 @@ h2 {
 }
 
 .name__subtitle {
+  margin-top: 26px;
   font-size: 20pt;
+}
+
+#name div{
+  height: 2px;
+  width: 77px;
+  margin-top: 8px;
 }
 
 
@@ -119,6 +128,8 @@ h2 {
   flex-wrap: wrap;
   overflow-y: auto;
   max-height: 456px;
+  padding-top: 47px;
+  
 }
 
 #experiences .containerA {
@@ -127,23 +138,57 @@ h2 {
   flex-wrap: wrap;
   overflow-y: auto;
   max-height: 624px;
+  padding-top: 47px;
 }
 
 .containerB {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  padding-top: 47px;
+}
+
+.containerB p{
+  display: block;
+  width: 40%;
+  justify-content: space-between;
+}
+
+.containerB p:nth-child(n+3){
+  margin-top: 40px;
+}
+
+.recommandation--name{
+  text-transform: uppercase;
+}
+
+.recommandation--informations{
+  display: inline-block;
+  margin-top: 11px;
+  line-height: 23px;
 }
 
 .date {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  width: 21.4rem;
+  width: 214px;
+  margin: 0 0 20px 0;
 }
     
 .event {
-  margin: 0.5rem 0 5rem 3rem;
+  margin: 5px 0 50px 30px;
+}
+
+.event--place {
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.event--workplace {
+  display: inline-block;
+  margin: 16px 0;
 }
 
 /* -----------------TITLE H2----------------- */
@@ -172,7 +217,7 @@ h2 {
 .title_section {
   display: flex;
   align-items: center;
-  margin-bottom: 72px;
+  margin-bottom: 9px;
 }
 
 /* -----------------ICON----------------- */
