@@ -64,7 +64,7 @@ h2 {
 
 /* -----------------MEDIA QUERRIES----------------- */
 
-@media only screen and (orientation: portrait) {
+@media only screen and (max-width : 320px) {
   
   .wrapper {
     grid-template-columns: 100%;
@@ -240,7 +240,7 @@ h2 {
   }
 }
 
-@media only screen and (orientation: landscape) {
+@media only screen and (min-width : 321px) {
 
   .wrapper {
     display: grid;
