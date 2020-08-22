@@ -290,7 +290,7 @@ h2 {
   .containerB p{
     display: block;
     justify-content: space-around;
-    width: 100%;
+    width: 25rem;
   }
 
   .containerB p:nth-child(n+2){
