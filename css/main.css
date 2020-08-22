@@ -145,12 +145,12 @@ h2 {
   flex-direction: row;
   flex-wrap: wrap;
   padding-top: 4.7rem;
+  justify-content: space-between
 }
 
 .containerB p{
   display: block;
   width: 40%;
-  justify-content: space-between;
 }
 
 .containerB p:nth-child(n+3){
