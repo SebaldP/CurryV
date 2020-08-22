@@ -63,7 +63,7 @@ h2 {
 .wrapper {
   display: grid;
   grid-template-columns: 384px 806px;
-  grid-template-rows: minmax(330px, max-content) 1.02fr 0.169fr 1.625fr 0.237fr 0.479fr;
+  grid-template-rows: minmax(330px, max-content) repeat(5, auto);
   grid-template-areas:
   	"pic name"
   	"contact formation"

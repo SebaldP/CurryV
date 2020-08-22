@@ -220,8 +220,8 @@ h2 {
   }
 
   #hat, #suitcase, #pen {
-    height: 3rem;
-    margin-right: 3.6rem;
+    height: 2rem;
+    margin-right: 2.4rem;
   }
 
   .double_point {
@@ -234,6 +234,10 @@ h2 {
     margin-right: 1.8rem;
   }
 
+  #name div{
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media only screen and (orientation: landscape) {
@@ -241,7 +245,7 @@ h2 {
   .wrapper {
     display: grid;
     grid-template-columns: 37.27vw 62.73vw;
-    grid-template-rows: minmax(33rem, max-content) 1.02fr 0.169fr 1.625fr 0.237fr 0.479fr;
+    grid-template-rows: minmax(33rem, max-content) repeat(5, auto);
     grid-template-areas:
     "pic name"
     "contact formation"
