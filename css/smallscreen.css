@@ -67,8 +67,8 @@ h2 {
 @media only screen and (orientation: portrait) {
   
   .wrapper {
-    grid-template-columns: 100vw;
-    grid-template-rows: 100vh repeat(7, auto);
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(8, auto);
     grid-template-areas: 
     "pic"
     "name"
@@ -97,22 +97,22 @@ h2 {
   
   #name {
     grid-area: name;
-    padding: 6.5rem;
+    padding: 4rem;
   }
   
   #formation {
     grid-area: formation;
-    padding: 2.7rem 5.5rem 5.1rem 6.5rem;
+    padding: 2.7rem 4rem 5.1rem 4rem;
   }
   
   #experiences {
     grid-area: experiences;
-    padding: 2.7rem 5.5rem 5.1rem 6.5rem;
+    padding: 2.7rem 4rem 5.1rem 4rem;
   }
   
   #recommandations {
     grid-area: recommandations;
-    padding: 2.7rem 5.5rem 5.1rem 6.5rem;
+    padding: 2.7rem 4rem 5.1rem 4rem;
   }
   
   #description {
@@ -184,15 +184,15 @@ h2 {
   }
   
   #description .title_aside_text {
-    padding: 3.6rem 4.9rem 3.9rem 4.9rem;
+    padding: 3.6rem 4rem 3.9rem 4rem;
   }
   
   #hobbies .title_aside_text {
-    padding: 3.6rem 4.9rem 3.9rem 4.9rem;
+    padding: 3.6rem 4rem 3.9rem 4rem;
   }
   
   #contact .title_aside_text {
-    padding: 3.6rem 4.9rem 3.9rem 4.9rem;
+    padding: 3.6rem 4rem 3.9rem 4rem;
   }
 
   #contact p:nth-child(n+2) {
@@ -244,7 +244,7 @@ h2 {
 
   .wrapper {
     display: grid;
-    grid-template-columns: 37.27vw 62.73vw;
+    grid-template-columns: 37.27% 62.73%;
     grid-template-rows: minmax(33rem, max-content) repeat(5, auto);
     grid-template-areas:
     "pic name"
