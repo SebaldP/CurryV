@@ -16,7 +16,7 @@ html {
   
 body {
   font-family: "Releway", Arial, sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 #fullscreen-video-bg, #fullscreen-video-bg--overlay{
@@ -27,15 +27,15 @@ body {
   
   
 .name--green {
-  font-size: 3rem;
-  line-height: 3rem;
+  font-size: 2rem;
+  line-height: 2rem;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 .name--grey {
-  font-size: 3rem;
-  line-height: 3rem;
+  font-size: 2rem;
+  line-height: 2rem;
   font-weight: lighter;
   text-transform: uppercase;
 }
@@ -45,14 +45,14 @@ body {
 }
 
 h2 {
-  font-size: 1.39rem;
+  font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 .name__subtitle {
   margin-top: 1.81rem;
-  font-size: 1.39rem;
+  font-size: 1.2rem;
   text-align: center;
 }
 
@@ -220,8 +220,8 @@ h2 {
   }
 
   #hat, #suitcase, #pen {
-    height: 2rem;
-    margin-right: 2.4rem;
+    height: 1.5rem;
+    margin-right: 1.2rem;
   }
 
   .double_point {
@@ -406,22 +406,22 @@ h2 {
   }
 
   #hobbies__reading, #hobbies__basketball, #hobbies__swimming {
-    height: 6.6rem;
+    height: 5rem;
   }
 
   #hat, #suitcase, #pen {
-    height: 3rem;
-    margin-right: 3.6rem;
+    height: 1.5rem;
+    margin-right: 1.2rem;
   }
   
   .double_point {
-    height: 1.2rem;
-    margin-right: 1.8rem;
+    height: 1rem;
+    margin-right: 1.5rem;
   }
   
   .point {
-    height: 1.2rem;
-    margin-right: 1.8rem;
+    height: 1rem;
+    margin-right: 1.5rem;
   }
 
 }
