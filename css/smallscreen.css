@@ -27,15 +27,15 @@ body {
   
   
 .name--green {
-  font-size: 2rem;
-  line-height: 2rem;
+  font-size: 3rem;
+  line-height: 3rem;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 .name--grey {
-  font-size: 2rem;
-  line-height: 2rem;
+  font-size: 3rem;
+  line-height: 3rem;
   font-weight: lighter;
   text-transform: uppercase;
 }
@@ -164,7 +164,7 @@ h2 {
   }
 
   .event--place {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     text-transform: uppercase;
   }
