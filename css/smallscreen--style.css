@@ -49,22 +49,22 @@ body {
   text-decoration: none;
 }
 
-.contact__adress--link:link {
+.contact__address--link:link {
   color: #404040;
   text-decoration: none;
 }
 
-.contact__adress--link:hover {
+.contact__address--link:hover {
   color: #404040;
   text-decoration: none;
 }
 
-.contact__adress--link:visited {
+.contact__address--link:visited {
   color: #404040;
   text-decoration: none;
 }
 
-.contact__adress--link:active {
+.contact__address--link:active {
   color: #404040;
   text-decoration: none;
 }
@@ -179,12 +179,10 @@ body {
 #formation:hover #hat, #experiences:hover #suitcase, #recommandation:hover #pen {
   animation-name: strong_pulse;
   animation-duration: 1s;
-  animation-delay: alternate;
   animation-timing-function: ease-in, ease-out;
   animation-iteration-count: infinite;
   -webkit-animation-name: pulse;
   -webkit-animation-duration: 1s;
-  -webkit-animation-delay: alternate;
   -webkit-animation-timing-function: ease-in, ease-out;
   -webkit-animation-iteration-count: infinite;
 }
@@ -211,12 +209,10 @@ body {
 #hobbies__swimming:hover, #hobbies__basketball:hover, #hobbies__reading:hover {
   animation-name: pulse;
   animation-duration: 2s;
-  animation-delay: alternate;
   animation-timing-function: ease-in, ease-out;
   animation-iteration-count: infinite;
   -webkit-animation-name: pulse;
   -webkit-animation-duration: 2s;
-  -webkit-animation-delay: alternate;
   -webkit-animation-timing-function: ease-in, ease-out;
   -webkit-animation-iteration-count: infinite;
 }
@@ -229,12 +225,10 @@ body {
 #hobbies__swimming:hover #hobbies__swimming__background {
   animation-duration: 1.5s;
   animation-name: fadein;
-  animation-delay: alternate;
   animation-timing-function: ease-in, ease-out;
   animation-iteration-count: infinite;
   -webkit-animation-duration: 1.5s;
   -webkit-animation-name: fadein;
-  -webkit-animation-delay: alternate;
   -webkit-animation-timing-function: ease-in, ease-out;
   -webkit-animation-iteration-count: infinite;
 }
@@ -251,12 +245,10 @@ body {
 #hobbies__basketball:hover #hobbies__basketball__ball-background {
   animation-duration: 1.5s;
   animation-name: fadein;
-  animation-delay: alternate;
   animation-timing-function: ease-in, ease-out;
   animation-iteration-count: infinite;
   -webkit-animation-duration: 1.5s;
   -webkit-animation-name: fadein;
-  -webkit-animation-delay: alternate;
   -webkit-animation-timing-function: ease-in, ease-out;
   -webkit-animation-iteration-count: infinite;
 }
@@ -273,12 +265,10 @@ body {
 #hobbies__reading:hover #hobbies__reading__first__cover, #hobbies__reading:hover #hobbies__reading__middle__cover, #hobbies__reading:hover #hobbies__reading__last__cover {
   animation-duration: 1.5s;
   animation-name: fadein;
-  animation-delay: alternate;
   animation-timing-function: ease-in, ease-out;
   animation-iteration-count: infinite;
   -webkit-animation-duration: 1.5s;
   -webkit-animation-name: fadein;
-  -webkit-animation-delay: alternate;
   -webkit-animation-timing-function: ease-in, ease-out;
   -webkit-animation-iteration-count: infinite;
 }

@@ -9,23 +9,23 @@ http://scripts.sil.org/OFL */
 
  @font-face {
 	font-family: "Releway";
-     src: url('font/Raleway/static/Raleway-Regular.ttf');
+     src: url('../font/Raleway/static/Raleway-Regular.ttf');
 }
 
 @font-face {
 	font-family: "Releway";
-     src: url('font/Raleway/static/Raleway-Medium.ttf');
+     src: url('../font/Raleway/static/Raleway-Medium.ttf');
      font-weight: bold;
 }
 
 @font-face {
 	font-family: "Releway";
-     src: url('font/Raleway/static/Raleway-Italic.ttf');
+     src: url('../font/Raleway/static/Raleway-Italic.ttf');
      font-style: italic;
 }
 
 @font-face {
 	font-family: "Releway";
-     src: url('font/Raleway/static/Raleway-ExtraLight.ttf');
+     src: url('../font/Raleway/static/Raleway-ExtraLight.ttf');
      font-weight: lighter;
 }
